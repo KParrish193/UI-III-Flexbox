@@ -64,3 +64,145 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* all page elements */
+/* page container*/
+
+.container {
+	width: 100%;
+	height: 100%;
+}
+
+/* header */
+header { 
+	display: flex;
+}
+
+nav {
+	display: flex;
+	color: lightslategrey;
+}
+
+nav a:link, nav a:visited {
+	color: lightslategrey;
+}
+
+ .logo {
+
+	}
+
+nav a { 
+	
+}
+
+/* etc */
+
+div {
+
+}
+
+a:link, a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* footer */
+
+.copyright {
+	text-align: center;
+}
+
+footer {
+	padding: 5%;
+}
+
+
+/* index styling*/
+/* main section, (classes = started, button, circle) */
+
+.started div {
+	display: inline-block;
+	width: 45%;
+	vertical-align: text-top;
+	text-align: center;
+}
+
+h1 { 
+	text-align: center;
+	font-size: 85px;
+	padding-bottom: 2%;
+}
+
+.button {
+	border: solid black 1px;
+	padding: 1% 9%;
+	display: inline-block;
+	letter-spacing: 1.25;
+	white-space: nowrap;
+}
+
+.circle {
+	margin: auto 0;
+}
+
+/* section 2 (class = two) */
+
+.two div { 
+	display: inline-block;
+	width: 49%;
+	margin: 0 auto;
+}
+
+#two {
+	border-top-color: black;
+	border-top-style: solid;
+	border-top-width: 1px;
+	margin: 0 auto;
+}
+
+/* image divider section (class = flatimg)*/
+
+.flatimg div { 
+	width: 100%;
+	padding: 0;
+	margin: 0 auto;
+}
+
+/* section 3 (class = three) */
+
+.three div {
+	display: inline-block;
+	width: 33%;
+	margin: 0 auto;
+}
+
+#three {
+	border-bottom-color: black;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	margin: 0 auto;
+}
+
+/* contact section (class = contact) */
+
+.contact a:link, .contact a:visited {
+	color:black;
+}
+
+.contact {
+	margin: 4% 0 0 0;
+}
+
+
+/* --services page styling-- */
+
+/* */
+
+/* main section */
+
+/* box section */
+
+/* facts section */
