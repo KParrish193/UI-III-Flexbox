@@ -65,40 +65,50 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-/* all page elements */
+/* --all page elements-- */
 /* page container*/
 
 .container {
-	width: 100%;
-	height: 100%;
+	max-width: 876px;
+	margin: 0 auto;
 }
 
 /* header */
 header { 
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 2%;
 }
 
 nav {
-	display: flex;
 	color: lightslategrey;
+	width: 62.5%;
+	display: flex; 
+	justify-content: space-between;
 }
 
 nav a:link, nav a:visited {
 	color: lightslategrey;
 }
 
- .logo {
-
+.logo {
+	 width: 30%;
+	 margin: 0;
 	}
 
 nav a { 
-	
+	text-align: center;
 }
 
 /* etc */
 
-div {
+section {
+	padding: 4% 0;
+}
 
+img {
+	object-fit: cover;
 }
 
 a:link, a:visited {
@@ -108,6 +118,15 @@ a:link, a:visited {
 a:hover {
 	text-decoration: underline;
 }
+
+h1 { 
+	text-align: center;
+	font-size: 85px;
+}
+
+h2 {
+	font-size: 25px;
+   }
 
 /* footer */
 
@@ -120,70 +139,70 @@ footer {
 }
 
 
-/* index styling*/
+/* --index styling-- */
 /* main section, (classes = started, button, circle) */
 
-.started div {
-	display: inline-block;
+.started {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.startedtext{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	width: 45%;
-	vertical-align: text-top;
-	text-align: center;
 }
 
-h1 { 
-	text-align: center;
-	font-size: 85px;
-	padding-bottom: 2%;
-}
-
-.button {
-	border: solid black 1px;
-	padding: 1% 9%;
-	display: inline-block;
-	letter-spacing: 1.25;
+.started button {
+	background-color: white;
+	border: black solid 1px;
+	width: 35%;
 	white-space: nowrap;
+	text-align: center;
+	padding: 2% 0;
+	letter-spacing: 1.5;
+
 }
 
 .circle {
-	margin: auto 0;
+	display: flex;
+	justify-content: center;
+	width: 45%;
 }
 
 /* section 2 (class = two) */
 
-.two div { 
-	display: inline-block;
-	width: 49%;
-	margin: 0 auto;
-}
-
-#two {
+.two { 
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
 	border-top-color: black;
 	border-top-style: solid;
 	border-top-width: 1px;
-	margin: 0 auto;
+	padding-bottom: 0;
 }
 
 /* image divider section (class = flatimg)*/
 
 .flatimg div { 
+	display: flex;
+	justify-content: center;
 	width: 100%;
+	height: 100%;
 	padding: 0;
-	margin: 0 auto;
 }
 
 /* section 3 (class = three) */
 
-.three div {
-	display: inline-block;
-	width: 33%;
-	margin: 0 auto;
-}
-
-#three {
+.three {
+	display: flex;
+	justify-content: space-between;
 	border-bottom-color: black;
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
-	margin: 0 auto;
+	padding-top: 0;
 }
 
 /* contact section (class = contact) */
@@ -193,16 +212,97 @@ h1 {
 }
 
 .contact {
-	margin: 4% 0 0 0;
+	width: 50%;
 }
 
 
 /* --services page styling-- */
 
-/* */
+/* services header */
 
-/* main section */
+.servicesheader {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+  	border-bottom-color: black;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+
+.servicesheader div {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.servicestext {
+	display: flex;
+	flex-direction: column;
+	padding-top: 3%;
+}
+
+.services-header-img {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
 
 /* box section */
 
+.boxes {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	flex-flow: row wrap;
+	border-bottom-color: black;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+
+.boxes div {
+	background-color: whitesmoke;
+	border: solid black 1px;
+	width: 45%;
+	margin: 2% 0;
+	padding: 2%
+}
+
+.boxes p {
+	padding-bottom: 2%;
+}
+
+.learnbutton {
+	text-align: center;
+	background-color: white;
+	border: black solid 1px;
+	border-radius: 8%;
+	padding: 2% 8%;
+}
+
 /* facts section */
+.facts {
+	display: flex;
+	justify-content: space-between;
+}
+
+.facts div {
+	width: 45%;
+}
+.factsimg div {
+	width: 45%;
+	display: flex;
+	justify-content: center;
+}
+
+.services-info-img{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.facts ul {
+	line-height: 2;
+	margin: 0 0 0 15px;
+}
